@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A clear view of project status, ownership, activity, and priority.">
+    <title>Project Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="project-data.json" as="fetch" type="application/json" crossorigin>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="dashboard" aria-labelledby="page-title">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">Team workspace</p>
+          <h1 id="page-title">Project Pulse</h1>
+          <p class="dashboard-intro">A focused snapshot of the work moving your team forward.</p>
+        </div>
+        <div class="dashboard-summary" aria-live="polite">
+          <span id="project-count">Loading projects...</span>
+        </div>
+      </header>
+
+      <section class="filter-bar" aria-labelledby="filter-heading">
+        <div class="filter-heading">
+          <h2 id="filter-heading">Find a project</h2>
+          <button id="clear-filters" type="button" class="button-secondary">Clear filters</button>
+        </div>
+        <div class="filter-controls">
+          <label for="project-search">Search</label>
+          <input id="project-search" type="search" placeholder="Name, owner, or activity" autocomplete="off">
+
+          <label for="status-filter">Status</label>
+          <select id="status-filter">
+            <option value="all">All statuses</option>
+            <option value="proposal">Proposal</option>
+            <option value="active">Active</option>
+            <option value="blocked">Blocked</option>
+            <option value="done">Done</option>
+          </select>
+
+          <label for="priority-filter">Priority</label>
+          <select id="priority-filter">
+            <option value="all">All priorities</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+
+          <label for="sort-projects">Sort by</label>
+          <select id="sort-projects">
+            <option value="priority">Priority</option>
+            <option value="name">Name</option>
+            <option value="status">Status</option>
+          </select>
+        </div>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <h2 id="projects-heading">Projects</h2>
+        </div>
+        <div id="project-list" class="project-list" aria-live="polite" aria-busy="true"></div>
+      </section>
+    </main>
+  </body>
+</html>

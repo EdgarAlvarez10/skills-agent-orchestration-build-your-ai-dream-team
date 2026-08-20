@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "northstar",
+      "name": "Northstar onboarding",
+      "description": "Make the first week feel clear and useful for every new contributor.",
+      "owner": "Avery Chen",
+      "status": "active",
+      "recentActivity": "Interview notes synthesized into three onboarding paths.",
+      "priority": "high",
+      "dueDate": "2026-09-04",
+      "tags": ["people", "research"],
+      "progress": 68
+    },
+    {
+      "id": "signal-room",
+      "name": "Signal Room analytics",
+      "description": "Turn weekly project signals into a concise view for decision-makers.",
+      "owner": "Jordan Rivera",
+      "status": "active",
+      "recentActivity": "The event taxonomy is ready for implementation review.",
+      "priority": "medium",
+      "dueDate": "2026-09-18",
+      "tags": ["data", "insights"],
+      "progress": 42
+    },
+    {
+      "id": "field-notes",
+      "name": "Field Notes mobile kit",
+      "description": "Give field teams a faster way to capture observations offline.",
+      "owner": "Samira Okafor",
+      "status": "blocked",
+      "recentActivity": "Waiting on device access approval before the pilot can begin.",
+      "priority": "high",
+      "dueDate": null,
+      "tags": ["mobile", "pilot"],
+      "progress": 31
+    },
+    {
+      "id": "quiet-hours",
+      "name": "Quiet Hours communications",
+      "description": "Create a calmer rhythm for updates across distributed teams.",
+      "owner": "Luis Moreno",
+      "status": "proposal",
+      "recentActivity": "Draft scope shared with team leads for early feedback.",
+      "priority": "low",
+      "dueDate": "2026-10-02",
+      "tags": ["culture", "comms"],
+      "progress": 12
+    },
+    {
+      "id": "atlas-refresh",
+      "name": "Atlas documentation refresh",
+      "description": "Reduce time-to-answer by bringing the most-used guides up to date.",
+      "owner": "Priya Nair",
+      "status": "done",
+      "recentActivity": "All priority-one guides have been reviewed and published.",
+      "priority": "medium",
+      "dueDate": "2026-08-14",
+      "tags": ["docs", "enablement"],
+      "progress": 100
+    },
+    {
+      "id": "green-room",
+      "name": "Green Room partner toolkit",
+      "description": "A launch-ready toolkit for partners supporting the next release.",
+      "owner": "Taylor Brooks",
+      "status": "active",
+      "recentActivity": "Partner feedback incorporated into the release checklist.",
+      "priority": "high",
+      "dueDate": "2026-08-28",
+      "tags": ["launch", "partners"],
+      "progress": 79
+    },
+    {
+      "id": "long-horizon",
+      "name": "Long-horizon contributor research and shared learning archive",
+      "description": "Capture durable lessons from experiments so future teams can build on them.",
+      "owner": "Morgan Lee",
+      "status": "proposal",
+      "recentActivity": "Research questions grouped into a lightweight discovery brief.",
+      "priority": "low",
+      "dueDate": null,
+      "tags": ["research", "learning"],
+      "progress": 5
+    }
+  ]
+}
