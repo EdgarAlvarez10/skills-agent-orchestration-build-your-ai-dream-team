@@ -63,6 +63,17 @@
         </div>
         <div id="project-list" class="project-list" aria-live="polite" aria-busy="true"></div>
       </section>
+
+      <template id="project-card-template">
+        <article class="project-card">
+          <h3 class="project-title"></h3>
+          <div class="project-meta">
+            <span class="badge" data-field="status"></span>
+            <span class="badge" data-field="priority"></span>
+          </div>
+          <p data-field="recentActivity"></p>
+        </article>
+      </template>
     </main>
   </body>
 </html>
